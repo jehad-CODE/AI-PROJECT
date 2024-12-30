@@ -23,7 +23,7 @@ def run_neural_network(data_path):
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
     
     # Train the model
-    model.fit(X_train, y_train, epochs=50, batch_size=32, verbose=1)
+    model.fit(X_train, y_train, epochs=20, batch_size=32, verbose=1)
     
     # Predict on test data
     y_pred = (model.predict(X_test) > 0.5).astype("int32").flatten()
