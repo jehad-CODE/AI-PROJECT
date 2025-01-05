@@ -5,7 +5,7 @@ def main():
     """
     Main function to run the entire pipeline: traditional ML and neural networks.
     """
-    data_path = 'data/heart.csv'  # Update the path as needed
+    data_path = 'data/heart.csv' 
     print("Starting the pipeline with dataset:", data_path)
 
     # Run Traditional Machine Learning models

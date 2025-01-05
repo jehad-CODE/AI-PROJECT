@@ -20,7 +20,7 @@ def load_and_preprocess_data(file_path):
     data.fillna(data.mean(), inplace=True)
     
     # Split the dataset into features (X) and target (y)
-    X = data.drop(columns=['target'])  # Adjust 'target' as your label column
+    X = data.drop(columns=['target'])  
     y = data['target']
     
     # Scale features using StandardScaler for normalization
